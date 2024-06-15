@@ -8,7 +8,7 @@ from RPA.PDF import PDF
 def minimal_task():
    message = "Hello"
    message = message + " World!"
-   message = message + "This is Shubhangi"
+   message = message + "This is Shubhangi J Ajegaonkar"
 def robot_spare_bin_python():
     """Insert the sales data for the week and export it as a PDF"""
     browser.configure(
