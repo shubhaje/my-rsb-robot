@@ -5,16 +5,17 @@ from RPA.Excel.Files import Files
 from RPA.PDF import PDF
 @task
 
-#def minimal_task():
-   # message = "Hello"
-   # message = message + " World!"
-   # message = message + "This is Shubhangi"
+def minimal_task():
+   message = "Hello"
+   message = message + " World!"
+   message = message + "This is Shubhangi"
 def robot_spare_bin_python():
     """Insert the sales data for the week and export it as a PDF"""
     browser.configure(
         slowmo=100,
     )
     open_the_intranet_website()
+    minimal_task()
     log_in()
     download_excel_file()
     fill_form_with_excel_data()
@@ -69,7 +70,7 @@ def export_as_pdf():
 
     pdf = PDF()
     pdf.html_to_pdf(sales_results_html, "output/sales_results.pdf")
-    
+
 def log_out():
     """Presses the 'Log out' button"""
     page = browser.page()  
